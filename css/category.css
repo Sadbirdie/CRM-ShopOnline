@@ -1,0 +1,7 @@
+.form__input--category {
+    color: transparent;
+}
+
+.form__input--category option {
+    color: #000000;
+}

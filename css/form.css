@@ -1,0 +1,30 @@
+.form__fieldset {
+    width: 580px;
+    min-height: 620px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.form__field {
+    display: block;
+    width: 524px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form__label {
+    margin-left: 28px;
+    margin-bottom: 8px;
+}
+
+.form__input {
+    width: 524px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 8px;
+    margin-left: 18px;
+    background-color: #f2f0f9;
+}

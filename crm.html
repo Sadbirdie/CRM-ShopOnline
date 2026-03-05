@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Форма - ShopOnline</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1 class="title">Добавить товар</h1>
+
+        <form id="my_form" action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+
+            <fieldset class="form__fieldset">
+                <p class="form__field">
+                    <label for="name" class="form__label">Наименование</label>
+                    <input type="text" name="name" id="name" class="form__input">
+                </p>
+
+                <p class="form__field">
+                    <label for="select" class="form__label">Категория</label>
+                    <select name="select" id="select" class="form__input form__input--category">
+                        <option value="household-appliances">Бытовая техника</option>
+                        <option value="furniture">Мебель</option>
+                        <option value="clothes">Одежда</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </p>
+
+                <p class="form__field">
+                    <label for="measure" class="form__label">Единицы измерения</label>
+                    <input type="text" name="measure" id="measure" class="form__input">
+                </p>
+
+                <p class="form__field">
+                    <label for="discount" class="discount-checkbox">Дисконт</label>
+                    <br>
+                    <input type="checkbox" name="discount" id="discount" value="discount" class="form__input--checkbox">
+                    <input type="text" name="discount_text" disabled class="form__input--discount-text">
+                </p>
+
+                <p class="form__field">
+                    <label for="description" class="form__label">Описание</label>
+                    <textarea name="description" id="description" class="form__input"></textarea>
+                </p>
+
+                <p class="form__field">
+                    <label for="quantity" class="form__label">Количество</label>
+                    <input type="number" name="quantity" id="quantity" min="1" class="form__input">
+                </p>
+
+                <p class="form__field">
+                    <label class="form__label">Цена</label>
+                    <input type="number" name="price" min="0" step="0.01" class="form__input">
+                </p>
+            </fieldset>
+        </form>
+
+        <div>
+            <button type="submit" form="my_form" class="button">Добавить товар</button>
+        </div>
+    </div>
+</body>
+
+</html>
